@@ -1,0 +1,61 @@
+
+header p {
+    margin-bottom: 50px;
+    line-height: 24px;
+}
+
+header {
+    padding-top: 32px;
+    margin-bottom: 150px;
+    text-align: left;
+}
+
+/* Основні стилі */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .logo {
+    width: 79px;
+    height: 79px;
+} */
+
+.logo img {
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    gap: 50px;
+}
+
+
+.header-container {
+    background-image: url('./../../assets/dog.png');
+    height: 600px;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: right center;
+    margin-top: 50px;
+}
+
+.greetings {
+    width: 50%;
+}
+
+.greetings a {
+    display: inline-flex;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    background-color: #774E2E;
+
+}
