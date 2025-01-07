@@ -1,19 +1,29 @@
-import { useState } from 'react'
+import React from 'react';
 import './App.css'
-import Header from './components/Header/Header'
-import Main from './components/Main/Main'
-import Footer from './components/Footer/Footer'
+import img from './assets/react.svg'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const h1 = React.createElement('h1', {}, 'Заголовок');
+  const p = React.createElement('p', {}, 'Параграф тексту');
+  const createImg = React.createElement('img', {src: img});
+  const div = React.createElement('div', {}, h1, p, createImg);
 
   return (
     <>
-      <Header />
-      <Main />
-      <Footer />
-    </>
-  )
-}
+    <div>
+      <h1>Заголовок</h1>
+      <p>Параграф тексту</p>
+      <img src={img}/>
+    </div>
+    {div}
 
-export default App
+    <form action="">
+      <input type='text' onChange={(e) => console.log(e.target.value)}></input>
+    </form>
+    </>
+  
+  
+  );
+} 
+export default App;

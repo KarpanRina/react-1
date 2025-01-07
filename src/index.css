@@ -32,3 +32,11 @@ h1 span,
 h3 span {
     color: #F37F34;
 }
+
+.red-text {
+    color: red;
+}
+
+.active{
+    border: 5px solid green;
+}
