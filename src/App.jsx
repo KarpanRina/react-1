@@ -1,29 +1,17 @@
-import React from 'react';
-import './App.css'
-import img from './assets/react.svg'
+import Footer from "./containers/Footer/Footer";
+import Header from "./containers/Header/Header";
+import Main from "./containers/Main/Main";
+import Sidebar from "./containers/Sidebar/Sidebar";
 
-function App() {
 
-  const h1 = React.createElement('h1', {}, 'Заголовок');
-  const p = React.createElement('p', {}, 'Параграф тексту');
-  const createImg = React.createElement('img', {src: img});
-  const div = React.createElement('div', {}, h1, p, createImg);
-
+export default function App() {
   return (
-    <>
-    <div>
-      <h1>Заголовок</h1>
-      <p>Параграф тексту</p>
-      <img src={img}/>
-    </div>
-    {div}
+    <div className="container">
+      <Header />
+      <Main />
+      <Sidebar />
+      <Footer />
 
-    <form action="">
-      <input type='text' onChange={(e) => console.log(e.target.value)}></input>
-    </form>
-    </>
-  
-  
+    </div>
   );
 } 
-export default App;
