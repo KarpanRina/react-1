@@ -1,0 +1,14 @@
+li {
+  display: flex;
+  gap: 5px;
+  margin: 5px;
+}
+
+img {
+  /* width: 20px; */
+  height: 10px;
+}
+
+button {
+  margin: 2px;
+}
